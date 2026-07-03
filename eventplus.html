@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Plus — UX Case Study · Arul K Murthy</title>
+  <meta name="description" content="A 5-day sprint concept: paid events inside Google Calendar. Research plus four screens of a nine-screen flow, with honest attribution and metrics labeled as targets.">
+  <meta name="author" content="Arul K Murthy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap">
+  <nav class="nav" aria-label="Main">
+    <a class="nav-name" href="index.html">Arul K Murthy</a>
+    <ul class="nav-links">
+      <li><a href="index.html#work" aria-current="page">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero wrap" style="padding-bottom:56px;">
+    <span class="eyebrow">Case study · Payments concept · 5-day sprint</span>
+    <h1 style="max-width:20ch;">Event Plus: paid events inside Google Calendar.</h1>
+    <div class="meta-row">
+      <span><strong>Role</strong> — User research + final design on 4 of 9 screens</span>
+      <span><strong>Team</strong> — 5, spanning Product, Tech, Marketing, Business, Design</span>
+      <span><strong>Format</strong> — Conceptual feature, not affiliated with Google</span>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="card summary">
+      <span class="eyebrow">Summary — the 60-second version</span>
+      <dl>
+        <div>
+          <dt>The problem</dt>
+          <dd>Scheduling is solved; monetizing isn't. Anyone running a paid event has to leave Calendar and stitch together separate tools for ticketing, payment, and promotion — a workflow Google's own ecosystem sits adjacent to but never captures.</dd>
+        </div>
+        <div>
+          <dt>My role</dt>
+          <dd>User research, plus final design on four screens: Entry, Pricing &amp; Tickets, Payment, and Premium. The case study shows all nine screens for full-flow context — attribution below marks exactly which are mine.</dd>
+        </div>
+        <div>
+          <dt>The solution</dt>
+          <dd>A "Paid Event" toggle inside Calendar's existing create flow: tiered ticketing with live net-revenue math, inline UPI/bank setup with visible trust cues, QR tickets on publish, and an optional premium tier — core stays free.</dd>
+        </div>
+        <div>
+          <dt>The honest caveat</dt>
+          <dd>A five-day concept has no live usage data. Every metric here is a launch target scoped to what the flow could instrument — labeled as such, never presented as a result.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">01 — Problem</span>
+      <h2>Six points of friction</h2>
+      <div class="prose">
+        <p>No integrated payments. No built-in ticketing. No premium tier for larger events. No monetized promotion through Google's own ecosystem. A fragmented workflow where constant tool-switching causes drop-off. And no sector-specific flows for webinars, workshops, or meetups. Each friction point became a design requirement — from a single "Paid Event" toggle to one unified dashboard for sales, attendees, and tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">02 — Grounding</span>
+      <h2>Learning from a competitor's mistakes</h2>
+      <div class="prose">
+        <p>Rather than inventing requirements, we anchored decisions to observed usability failures in Cisco Webex's event experience.</p>
+      </div>
+      <div class="card" style="margin-top:36px;">
+        <div class="verdict-scroll">
+          <table class="verdict">
+            <thead>
+              <tr><th>Webex issue</th><th>Heuristic violated</th><th>Event Plus response</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Cluttered dashboard</td><td>Aesthetic &amp; minimalist design</td><td>One dedicated "+ Create" CTA; no competing actions.</td></tr>
+              <tr><td>Extra pre-join clicks</td><td>User control &amp; freedom</td><td>Linear modal workflow — no pop-outs or screen hops.</td></tr>
+              <tr><td>Poor visual hierarchy</td><td>Recognition over recall</td><td>Tabbed modal + summary panel anchors the primary action.</td></tr>
+              <tr><td>Inconsistent entry points</td><td>Consistency &amp; standards</td><td>Unified "+ Create" entry; paid is a clear secondary tab.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">03 — The flow, with honest attribution</span>
+      <h2>Nine screens. Four are mine.</h2>
+      <div class="prose">
+        <p>The full flow is shown for context: Entry → Paid Toggle → Ticketing → Payment → Publish → Promote → Manage. Screens tagged <span class="chip chip-mine">My work</span> are my individual design work; screens tagged <span class="chip chip-team">Team build</span> were designed by teammates.</p>
+      </div>
+
+      <div class="card" style="margin-top:36px;">
+        <div class="verdict-scroll">
+          <table class="verdict">
+            <thead>
+              <tr><th>Screen</th><th>Attribution</th><th>What it does</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>01 · Entry</td><td><span class="chip chip-mine">My work</span></td><td>One "+ Create" button; the Event Plus toggle reveals paid-event fields inline — no separate flow to learn.</td></tr>
+              <tr><td>02 · Customize</td><td><span class="chip chip-team">Team build</span></td><td>Sector-specific event type and dynamic fields.</td></tr>
+              <tr><td>03 · Pricing &amp; Tickets</td><td><span class="chip chip-mine">My work</span></td><td>Ticket tiers with a live net-revenue summary — pricing math happens inline, not in a spreadsheet.</td></tr>
+              <tr><td>04 · Payment</td><td><span class="chip chip-mine">My work</span></td><td>Inline UPI setup with visible PCI, fraud, and encryption signals — trust cues at the exact moment they're needed.</td></tr>
+              <tr><td>05 · Registration</td><td><span class="chip chip-team">Team build</span></td><td>Auto-generated invite email and QR ticket, previewed before publish.</td></tr>
+              <tr><td>06 · Published</td><td><span class="chip chip-team">Team build</span></td><td>Confirmation with an optional upsell into paid promotion, kept separate from publishing.</td></tr>
+              <tr><td>07 · Premium</td><td><span class="chip chip-mine">My work</span></td><td>Three tiers with the middle plan visually anchored; every core paid-event feature stays free.</td></tr>
+              <tr><td>08 · Amplify</td><td><span class="chip chip-team">Team build</span></td><td>One-click campaign setup across Google Ads, YouTube, and Gmail with a budget slider.</td></tr>
+              <tr><td>09 · Confirmation &amp; Boost</td><td><span class="chip chip-team">Team build</span></td><td>Back in Calendar — live sales, tasks, and attendee tracking in one panel.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- To add screens: export frames as PNG or WebP into /img,
+           then uncomment and repeat per screen. Keep the attribution chip in the caption.
+      <figure>
+        <img src="img/eventplus-01-entry.png" alt="Google Calendar event creation modal with an Event Plus toggle for paid events." width="1440" height="810" loading="lazy">
+        <figcaption>01 · Entry — <span class="chip chip-mine">My work</span></figcaption>
+      </figure>
+      -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">04 — My four screens, the reasoning</span>
+      <h2>Design decisions I can defend</h2>
+      <div class="prose">
+        <p><strong>Entry.</strong> Every event starts from the "+ Create" button people already use — the paid-event toggle reveals its fields inline. New capability, zero new navigation to learn. This was the direct answer to Webex's inconsistent entry points.</p>
+        <p><strong>Pricing &amp; Tickets.</strong> Organizers price events in spreadsheets because tools show gross numbers. The tier builder shows net revenue live — gross, commission, and total update as you type — so the pricing decision happens where the pricing input is.</p>
+        <p><strong>Payment.</strong> Trust cues placed at the moment of maximum hesitation: PCI badge above the fold, fraud/encryption/storage signals at the point of authorization. UPI-first for the Indian market, bank account as the visible alternative, no external redirects.</p>
+        <p><strong>Premium.</strong> Three tiers with the middle plan anchored — and the structural decision that mattered: every core paid-event feature stays free, so the upsell never gates adoption.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">05 — Result &amp; reflection</span>
+      <h2>How success would be measured</h2>
+      <div class="prose">
+        <p>A five-day concept has no live usage data — these two metrics are scoped to exactly what this flow can instrument at launch:</p>
+      </div>
+      <div class="card-grid" style="margin-top:32px;">
+        <div class="card">
+          <span class="chip chip-target" style="margin-bottom:14px;display:inline-block;">Target — not a result</span>
+          <h3>End-to-end flow completion</h3>
+          <p class="muted">Baseline ~0% (no in-Calendar paid support today). Target: ≥50% complete Create → Toggle → Pricing → Payment → Publish.</p>
+        </div>
+        <div class="card">
+          <span class="chip chip-target" style="margin-bottom:14px;display:inline-block;">Target — not a result</span>
+          <h3>Registration conversion</h3>
+          <p class="muted">Baseline ~10% (external pages, poor attribution). Target: ≥25% via the internal "Amplify" channel.</p>
+        </div>
+      </div>
+      <div class="prose" style="margin-top:32px;">
+        <p><strong>What I would do next:</strong> validate the flow with 5–8 real organizers (payment and pricing first), pressure-test feasibility with engineering, and prototype the mobile version.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap pager">
+      <a href="insurenivaran.html">← Previous: InsureNivaran</a>
+      <a href="index.html#work">All work →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="integrity">Every number on this site is real or labeled a target.</p>
+    <div class="footer-row">
+      <span>© 2026 Arul K Murthy</span>
+      <span><a href="mailto:arulkmurthy@gmail.com">arulkmurthy@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
