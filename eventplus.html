@@ -100,6 +100,7 @@
       <span class="eyebrow">03 — The flow, with honest attribution</span>
       <h2>Nine screens. Four are mine.</h2>
       <div class="prose">
+        <p>The sprint went straight to high fidelity — five days inside Google's existing design language meant the system had already made the decisions lo-fi normally settles, so an extra fidelity step would have cost time without adding judgment.</p>
         <p>The full flow is shown for context: Entry → Paid Toggle → Ticketing → Payment → Publish → Promote → Manage. Screens tagged <span class="chip chip-mine">My work</span> are my individual design work; screens tagged <span class="chip chip-team">Team build</span> were designed by teammates.</p>
       </div>
 
@@ -123,14 +124,29 @@
           </table>
         </div>
       </div>
-
-      <!-- To add screens: export frames as PNG or WebP into /img,
-           then uncomment and repeat per screen. Keep the attribution chip in the caption.
+    
+      <div class="shot-grid">
       <figure>
-        <img src="img/eventplus-01-entry.png" alt="Google Calendar event creation modal with an Event Plus toggle for paid events." width="1440" height="810" loading="lazy">
-        <figcaption>01 · Entry — <span class="chip chip-mine">My work</span></figcaption>
+        <img src="img/ep-02-customize.webp" alt="Customize your event screen, step 1 of 4, with date, notification, location fields and sector-specific event details." width="1600" height="900" loading="lazy">
+        <figcaption>02 · Customize <span class="chip chip-team">Team build</span> — sector-specific event type and dynamic fields.</figcaption>
       </figure>
-      -->
+      <figure>
+        <img src="img/ep-05-registration.webp" alt="Registration and ticket distribution, step 4 of 4: invite email preview beside a QR-code event ticket, before publishing." width="1600" height="900" loading="lazy">
+        <figcaption>05 · Registration <span class="chip chip-team">Team build</span> — auto-generated invite email and QR ticket, previewed before publish.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/ep-06-published.webp" alt="Confirmation screen: your event is now published, with an optional banner to boost the campaign." width="1600" height="900" loading="lazy">
+        <figcaption>06 · Published <span class="chip chip-team">Team build</span> — confirmation with an optional upsell, kept separate from publishing.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/ep-08-amplify.webp" alt="Amplify screen, step 2 of 2: event details with QR ticket, a campaign budget slider with estimated reach, and Google Ads, YouTube, and Gmail promotion channels." width="1600" height="900" loading="lazy">
+        <figcaption>08 · Amplify <span class="chip chip-team">Team build</span> — one-click campaign setup across Google's channels with a budget slider and reach estimate.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/ep-09-boost.webp" alt="Back in Google Calendar: an Event Plus side panel tracks tickets sold, total revenue, upcoming tasks, and attendees alongside the week view." width="1600" height="764" loading="lazy">
+        <figcaption>09 · Confirmation &amp; Boost <span class="chip chip-team">Team build</span> — live sales, tasks, and attendee tracking in one panel.</figcaption>
+      </figure>
+      </div>
     </div>
   </section>
 
@@ -140,9 +156,26 @@
       <h2>Design decisions I can defend</h2>
       <div class="prose">
         <p><strong>Entry.</strong> Every event starts from the "+ Create" button people already use — the paid-event toggle reveals its fields inline. New capability, zero new navigation to learn. This was the direct answer to Webex's inconsistent entry points.</p>
+
+      <figure>
+        <img src="img/ep-01-entry.webp" alt="Google Calendar week view with the event-creation modal open; an Event Plus toggle sits inside it, revealing paid-event options inline." width="1600" height="764" loading="lazy">
+        <figcaption>01 · Entry <span class="chip chip-mine">My work</span> — every event starts from the "+ Create" button; the toggle reveals paid-event fields inline, no separate flow to learn.</figcaption>
+      </figure>
         <p><strong>Pricing &amp; Tickets.</strong> Organizers price events in spreadsheets because tools show gross numbers. The tier builder shows net revenue live — gross, commission, and total update as you type — so the pricing decision happens where the pricing input is.</p>
+      <figure>
+        <img src="img/ep-03-pricing.webp" alt="Pricing and tickets screen, step 2 of 4: a ticket tier form beside a live summary showing gross revenue, Google commission, and total." width="1600" height="900" loading="lazy">
+        <figcaption>03 · Pricing &amp; Tickets <span class="chip chip-mine">My work</span> — tiers with a live net-revenue summary; pricing math happens inline, not in a spreadsheet.</figcaption>
+      </figure>
         <p><strong>Payment.</strong> Trust cues placed at the moment of maximum hesitation: PCI badge above the fold, fraud/encryption/storage signals at the point of authorization. UPI-first for the Indian market, bank account as the visible alternative, no external redirects.</p>
+      <figure>
+        <img src="img/ep-04-payment.webp" alt="Payment processing setup, step 3 of 4: UPI and bank account tabs, refund policy fields, with PCI compliance, fraud detection, and encryption badges." width="1600" height="900" loading="lazy">
+        <figcaption>04 · Payment <span class="chip chip-mine">My work</span> — inline UPI setup with trust cues at the exact moment they're needed.</figcaption>
+      </figure>
         <p><strong>Premium.</strong> Three tiers with the middle plan anchored — and the structural decision that mattered: every core paid-event feature stays free, so the upsell never gates adoption.</p>
+      <figure>
+        <img src="img/ep-07-premium.webp" alt="Upgrade to Premium screen with Basic, Standard, and Premium annual plans; the middle Standard plan is visually highlighted." width="1600" height="900" loading="lazy">
+        <figcaption>07 · Premium <span class="chip chip-mine">My work</span> — three tiers with the middle plan anchored; every core paid-event feature stays free.</figcaption>
+      </figure>
       </div>
     </div>
   </section>
@@ -183,7 +216,6 @@
 
 <footer>
   <div class="wrap">
-    <p class="integrity">Every number on this site is real or labeled a target.</p>
     <div class="footer-row">
       <span>© 2026 Arul K Murthy</span>
       <span><a href="mailto:arulkmurthy@gmail.com">arulkmurthy@gmail.com</a></span>

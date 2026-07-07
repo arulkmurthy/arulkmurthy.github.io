@@ -230,7 +230,8 @@ footer { border-top: 1px solid var(--hairline); padding: 44px 0 56px; }
 }
 
 /* ---------- responsive ---------- */
-@media (max-width: 780px) {
+@media (max-width: 799.98px) {
+  .wrap { padding: 0 16px; }
   .section { padding: 64px 0; }
   .hero { padding: 64px 0 72px; }
   .card-grid, .summary dl { grid-template-columns: 1fr; }
@@ -238,4 +239,34 @@ footer { border-top: 1px solid var(--hairline); padding: 44px 0 56px; }
   .nav-links { gap: 18px; }
   .verdict-scroll { overflow-x: auto; }
   .verdict { min-width: 560px; }
+}
+
+/* ---------- team screen grid (subordinate to interleaved MY WORK figures) ---------- */
+.shot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+.shot-grid figure { margin: 0; }
+.shot-grid figcaption { font-size: 0.82rem; }
+
+/* ---------- mobile overflow hardening ---------- */
+html, body { overflow-x: clip; }
+img, svg, video { max-width: 100%; height: auto; }
+td, th, a { overflow-wrap: break-word; }
+
+@media (max-width: 799.98px) {
+  .shot-grid { grid-template-columns: 1fr; }
+  h1 { font-size: clamp(2rem, 8.5vw, 2.6rem); }
+  .hero-actions .btn { width: 100%; text-align: center; }
+  .meta-row { gap: 8px 22px; }
+}
+
+/* ---------- phone screen masonry (InsureNivaran) ---------- */
+.phone-grid { columns: 3; column-gap: 20px; margin-top: 36px; }
+.phone-grid figure { break-inside: avoid; margin: 0 0 20px; }
+.phone-grid figcaption { font-size: 0.82rem; }
+.phone-figure { max-width: 420px; margin: 40px auto; }
+
+@media (max-width: 799.98px) {
+  .phone-grid { columns: 2; column-gap: 14px; }
+}
+@media (max-width: 480px) {
+  .phone-grid { columns: 1; }
 }

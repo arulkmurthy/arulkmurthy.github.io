@@ -79,13 +79,44 @@
         <p>A guided flow: state your needs, get matched plans, compare providers side by side, adjust coverage with a live premium calculator, and check out. I designed all screens through hi-fi.</p>
       </div>
 
-      <!-- To add screens: export slides/frames as PNG or WebP into an /img folder,
-           then uncomment and repeat this block per image.
-      <figure>
-        <img src="img/insurenivaran-recommendation-flow.png" alt="Hi-fi wireframes of the Smart Insurance Recommendation flow, from needs input to checkout." width="1440" height="810" loading="lazy">
-        <figcaption>The recommendation flow: needs → matches → comparison → calculator → checkout.</figcaption>
-      </figure>
-      -->
+      <div class="phone-grid">
+        <figure>
+          <img src="img/in-sir-01-dashboard.webp" alt="InsureNivaran dashboard with active policies, premium calculator banner and personalised recommendations." width="900" height="4464" loading="lazy">
+          <figcaption>01 · Dashboard</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-sir-02-needs.webp" alt="Tell Us Your Needs form with coverage type, who to insure, premium range slider and optional features." width="900" height="2334" loading="lazy">
+          <figcaption>02 · Tell Us Your Needs</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-sir-03-analyzing.webp" alt="Analyzing your preferences modal with progress bar and AI analysis, processing and matching stages." width="900" height="2334" loading="lazy">
+          <figcaption>03 · Analyzing preferences</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-sir-04-recommendations.webp" alt="Your Recommendations list with four insurance plans, cover amount selectors and calculated premiums." width="900" height="5184" loading="lazy">
+          <figcaption>04 · Your Recommendations</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-sir-05-compare.webp" alt="Compare Providers screen with Allianz and HDFC Life side by side: premium, claim settlement ratio, trust rating and benefits." width="900" height="2507" loading="lazy">
+          <figcaption>05 · Compare Providers</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-sir-06-calculator.webp" alt="Coverage Calculator anchored under the Allianz Insurance header, with key terms and other available plans below." width="900" height="3187" loading="lazy">
+          <figcaption>06 · Coverage Calculator</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-sir-07-select-provider.webp" alt="Select Provider list with Best Value, Popular and New badges on provider cards." width="900" height="5184" loading="lazy">
+          <figcaption>07 · Select Provider</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-sir-08-customize.webp" alt="Customize Your Plan for Allianz with coverage slider, optional add-ons and live premium calculation." width="900" height="2661" loading="lazy">
+          <figcaption>08 · Customize Your Plan</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-sir-09-checkout.webp" alt="Checkout with payment method selector, order summary including tax, and trust badges." width="900" height="2334" loading="lazy">
+          <figcaption>09 · Checkout</figcaption>
+        </figure>
+      </div>
 
       <div class="card" style="margin-top:36px;">
         <h3 style="margin-bottom:16px;">What testing surfaced, screen by screen</h3>
@@ -117,6 +148,11 @@
         <p>My wireframe spec had placed the slider below each provider card. In hi-fi, it was lifted into a standalone screen and lost that anchor. The complaint wasn't new — it was the design drifting from its own specification, and I was the one who let it drift.</p>
         <p><strong>Fix:</strong> re-anchored the calculator to a named provider, restoring the spec's original intent. The lesson wasn't "add a label" — it was that specs need re-reading <em>during</em> hi-fi design, not just before it.</p>
       </div>
+      <figure class="phone-figure">
+        <img src="img/in-sir-06-calculator.webp" alt="The fix: Coverage Calculator re-anchored under the Allianz Insurance provider header." width="900" height="3187" loading="lazy">
+        <figcaption>The shipped fix — the calculator lives under a named provider again.</figcaption>
+      </figure>
+      
     </div>
   </section>
 
@@ -126,6 +162,37 @@
       <h2>Campaign Feedback — the feature that failed testing</h2>
       <div class="prose">
         <p>A flow for users to rate and comment on insurance campaigns. Across 3 usability sessions with the same 2 personas, 3 of the 6 screens tested negative. I'm including the full verdicts because the diagnosis matters more than the score.</p>
+      </div>
+
+      <div class="phone-grid">
+        <figure>
+          <img src="img/in-cf-01-active-campaigns.webp" alt="Active Campaigns list showing Summer Offers and Tech Innovation Week cards." width="900" height="1965" loading="lazy">
+          <figcaption>Step 1 · Active Campaigns</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-cf-02-campaign-details.webp" alt="Campaign Details for Premium Life Protection Plan with product details and status tags." width="900" height="1938" loading="lazy">
+          <figcaption>Step 2 · Campaign Details</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-cf-03-provide-feedback.webp" alt="Campaign Rating screen with star rating, optional tags and additional comments." width="900" height="1951" loading="lazy">
+          <figcaption>Step 3 · Provide Feedback</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-cf-04-star-feedback.webp" alt="Share Your Feedback screen confirming a 4-star rating with optional comments and community feedback." width="900" height="1969" loading="lazy">
+          <figcaption>Step 4 · Star Feedback</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-cf-05-submission.webp" alt="Submit Feedback screen with rating, tags and feedback field, submit button disabled until rating given." width="900" height="1956" loading="lazy">
+          <figcaption>Step 5 · Submission</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-cf-06-campaign-ratings.webp" alt="Campaign Ratings summary: 4.2 average across 234 ratings with quality, value, experience scores and recent reviews." width="900" height="1938" loading="lazy">
+          <figcaption>Step 6 · Campaign Ratings</figcaption>
+        </figure>
+        <figure>
+          <img src="img/in-cf-07-summary.webp" alt="Campaign Summary with personalization status, recommendations, quick filters and recently viewed." width="900" height="1974" loading="lazy">
+          <figcaption>Step 7 · Summary</figcaption>
+        </figure>
       </div>
 
       <div class="card" style="margin-top:36px;">
@@ -175,7 +242,6 @@
 
 <footer>
   <div class="wrap">
-    <p class="integrity">Every number on this site is real or labeled a target.</p>
     <div class="footer-row">
       <span>© 2026 Arul K Murthy</span>
       <span><a href="mailto:arulkmurthy@gmail.com">arulkmurthy@gmail.com</a></span>
