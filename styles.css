@@ -107,7 +107,7 @@ p + p { margin-top: 1em; }
 .muted { color: var(--muted); }
 
 /* ---------- hero ---------- */
-.hero { padding: 96px 0 104px; }
+.hero { padding-top: 96px; padding-bottom: 104px; }
 .hero .lede { margin-top: 26px; }
 .hero-meta {
   font-family: var(--font-mono); font-size: 0.82rem;
@@ -233,7 +233,7 @@ footer { border-top: 1px solid var(--hairline); padding: 44px 0 56px; }
 @media (max-width: 799.98px) {
   .wrap { padding: 0 16px; }
   .section { padding: 64px 0; }
-  .hero { padding: 64px 0 72px; }
+  .hero { padding-top: 64px; padding-bottom: 72px; }
   .card-grid, .summary dl { grid-template-columns: 1fr; }
   .card { padding: 26px; }
   .nav-links { gap: 18px; }
